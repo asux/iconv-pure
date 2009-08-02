@@ -1,0 +1,17 @@
+= iconv-pure
+
+a pure ruby, naive implementation of iconv for 1.9
+
+= install
+
+gem install luikore-iconv-pure
+
+= usage example (like iconv, but not so powerful)
+
+  require 'rubygems'
+  require 'iconv'
+  puts(Iconv.conv 'utf-8//ignore', 'gbk//ignore', '哼哼')
+
+= license
+
+as Ruby's.
