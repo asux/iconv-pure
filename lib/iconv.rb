@@ -15,8 +15,7 @@ class Iconv
   end
 
   def iconv s
-    s.force_encoding @from
-    s.encode @to, @opts
+    s.encode @to, @from, @opts
   end
 
   def Iconv.open to, from
